@@ -3,59 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Revival</title>
+  <title>ESPZ</title>
   <style>
     body {
-      font-family: Verdana, sans-serif;
-      background: #c3d6f4;
+      font-family: Arial, sans-serif;
+      background: #e3e3e3;
       margin: 0;
       padding: 0;
     }
+
+    /* Barra superior estilo Roblox 2017 */
     header {
-      background: #1f4ba5;
+      background: #263a6b;
       color: white;
-      padding: 10px;
-      text-align: center;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav {
-      background: #244b8a;
-      padding: 8px;
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
     }
+
     nav a {
       color: white;
-      margin: 0 10px;
       text-decoration: none;
+      margin: 0 12px;
       font-weight: bold;
     }
-    .container {
-      padding: 20px;
+
+    nav a:hover {
+      text-decoration: underline;
     }
+
+    /* Contenedor principal */
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    /* Tarjetas estilo catálogo */
     .card {
       background: white;
+      border: 1px solid #ccc;
+      border-radius: 3px;
       padding: 15px;
-      margin: 10px 0;
-      border: 2px solid #244b8a;
+      margin: 10px;
+      flex: 1 1 calc(25% - 20px);
+      box-sizing: border-box;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 2px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Botón estilo clásico */
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #263a6b;
+      color: white;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #1b2c4f;
+    }
+
+    footer {
+      background: #263a6b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mi Revival Estilo 2008</h1>
+    <h1>Echo por Karambit</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Foro</a>
+      <a href="#">Perfil</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Foro</a>
-  </nav>
+
   <div class="container">
-    <div class="card">
-      <h2>Bienvenido</h2>
-      <p>Pagina echa por Karambit🚀 (EN DESARROLLO).</p>
-    </div>
-    <div class="card">
-      <h2>Noticias</h2>
-      <p>Pronto más contenido...</p>
+    <h2>Catálogo destacado</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Item 1">
+        <h3>Item 1</h3>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Item 2">
+        <h3>Item 2</h3>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Item 3">
+        <h3>Item 3</h3>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Item 4">
+        <h3>Item 4</h3>
+        <a href="#" class="btn">Ver más</a>
+      </div>
     </div>
   </div>
+
+  <footer>
+    <p>ESPZ © 2025 - Todos los derechos reservados!</p>
+  </footer>
 </body>
 </html>
